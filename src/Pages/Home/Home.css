@@ -1,0 +1,17 @@
+.wrapper {
+  background: black;
+  padding-left: 17%;
+  padding-right: 2%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.large-wrapper {
+  padding-left: 7%;
+}
+@media (max-width: 1024px) {
+  .wrapper,
+  .large-wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
