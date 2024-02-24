@@ -22,7 +22,7 @@ const Recommended = ({ categoryId }) => {
       {apiData.map((item, index) => {
         return (
           <Link to={`/video/${item.snippet.categoryId}/${item.id}`} key={index} className="side-video-list flex justify-between mb-[8px]">
-            <img src={item.snippet.thumbnails.medium.url} alt="" className="basis-[49%] w-[50%]" />
+            <img onClick={window.scrollTo(0, 0)} src={item.snippet.thumbnails.medium.url} alt="" className="basis-[49%] w-[50%]" />
             <div className="vid-info basis-[48%]">
               <h4 className="text-[13px] font-semibold text-white mb-[5px]">{item.snippet.title}</h4>
               <p className="text-[12px] text-white">{item.snippet.channelTitle}</p>
